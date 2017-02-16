@@ -48,7 +48,6 @@ try:
         try:
             recurso = int(recurso)
             sumando.insert(cont, recurso)
-            print("Sumando " + str(cont) + ": " + str(sumando[cont]))
             cont += 1
         except ValueError:
             recvSocket.send(bytes("HTTP/1.1 200 OK\r\n\r\n" +
